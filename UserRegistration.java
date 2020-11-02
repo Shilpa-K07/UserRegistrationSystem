@@ -8,6 +8,7 @@ public class UserRegistration {
 	public static final String NAMEPATTERN = "[A-Z][A-Za-z]{2,}";
 	public static final String EMAILPATTERN = "([0-9A-Za-z])+([-+._][0-9A-Za-z]+)*"
 											+ "@([0-9A-Za-z])+[.]([a-zA-Z])+([.][A-Za-z]+)*";
+	public static final String MOBILENUMBERPATTERN = "\\d{2}[-\\.\\s]\\d{10}";
 	
 	public static void main(String[] args) {
 		System.out.println("Welcome to User Registration !");
@@ -28,6 +29,11 @@ public class UserRegistration {
 		System.out.println("Enter email id ");
 		String emailId = scanner.next();
 		validateUserInput(EMAILPATTERN, emailId);
+
+		System.out.println("Enter mobile number ");
+		scanner.nextLine();
+		String mobileNumber = scanner.nextLine();
+		validateUserInput(MOBILENUMBERPATTERN, mobileNumber);
 	}
 
 	private void validateUserInput(String patttern, String input) {
