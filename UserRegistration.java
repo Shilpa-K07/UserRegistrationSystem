@@ -9,7 +9,7 @@ public class UserRegistration {
 	public static final String EMAILPATTERN = "([0-9A-Za-z])+([-+._][0-9A-Za-z]+)*"
 											+ "@([0-9A-Za-z])+[.]([a-zA-Z])+([.][A-Za-z]+)*";
 	public static final String MOBILENUMBERPATTERN = "\\d{2}[-\\.\\s]\\d{10}";
-	public static final String PASSWORDPATTERN = "^(?=.{8,})(?=.*[A-Z]).*$";
+	public static final String PASSWORDPATTERN = "^(?=.{8,})(?=.*[A-Z])(?=.*[0-9]).*$";
 	
 	public static void main(String[] args) {
 		System.out.println("Welcome to User Registration !");
