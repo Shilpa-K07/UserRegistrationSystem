@@ -18,6 +18,10 @@ public class UserRegistration {
 		System.out.println("Enter first name ");
 		String firstName = scanner.next();
 		validateUserInput(NAMEPATTERN, firstName);
+
+		System.out.println("Enter last name ");
+		String lastName = scanner.next();
+		validateUserInput(NAMEPATTERN, lastName);
 	}
 
 	private void validateUserInput(String patttern, String input) {
